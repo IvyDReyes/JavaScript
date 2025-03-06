@@ -1,0 +1,3 @@
+let city
+//const highScore
+
