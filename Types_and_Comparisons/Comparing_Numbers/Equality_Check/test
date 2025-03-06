@@ -6,3 +6,17 @@ console.log(11 <= 11);
 
 //To check if a number is greater than or equal to another number, we use the greater-than-or-equal-to operator, >=.
 console.log(3099 >= 3099);
+
+//To store the result of a comparison in a variable, we use the = sign. This is the assignment operator.
+const result = 1 <= 15;
+console.log(result);
+
+//We can also use a comparison operator to compare a variable with another variable
+const min = 5;
+const max = 10;
+const result1 = min <= max;
+console.log(result1);
+
+const points = 12;
+const levelTwo = points >= 10;
+console.log("Level 2: " + levelTwo);
