@@ -4,6 +4,9 @@ let cityToVisit = "Salzburg";
 function travel() {
     console.log("Let's go to " + cityToVisit);
 }
+
+
+
 travel(cityToVisit);
 
 //Block scope is the part of code in between the braces ({}) that belong to loops or conditions.
