@@ -25,3 +25,8 @@ const getPrice3 = (total1 = 200, discount2 = 3) =>
     console.log(getPrice3); 
     
 console.log(getPrice3()); 
+
+const getRatio = (nom, denom = 2) => {
+    return nom / denom;
+};
+console.log(getRatio(40));
