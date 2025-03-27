@@ -1,0 +1,32 @@
+/*
+img {
+    padding: 20px;
+    background-color: aliceBlue;
+    margin: 20px;
+    border-radius: 30px;
+}
+button {
+    margin: 20px;
+}
+
+body {
+    background-color: #7E9A9A;
+    text-align: center;
+    height: 300px;
+}
+
+*/
+
+.container {
+    background-color: #EDC9B5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    background-color: #FFECCD;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
