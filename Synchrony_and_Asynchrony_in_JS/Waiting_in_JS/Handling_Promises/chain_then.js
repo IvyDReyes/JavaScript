@@ -12,17 +12,17 @@ const budget = 10;
 
 function isAvailable() {
     return new Promise(function(resolve, reject){
-        if (dessertStock.cheeseCake.inStockAmount > 0) {
+        if (dessertStock.spongeCake.inStockAmount > 0) {
             resolve(true);
-        } else {
-            reject(false);
+        } else { 
+            reject("The sponge cake is out of stock.. Canceling the order..");
         }
     });
 }
 
 function checkPrice(productAvailable) {
 return new Promise(function(resolve, reject) {
-    if (productAvailable && dessertStock.cheeseCake.price <= budget) {
+    if (productAvailable && dessertStock.spongeCake.price <= budget) {
         resolve("Reasonable price. Purhasing..");
     } else {
         reject("Too expensive. Canceling the order..");
@@ -38,6 +38,14 @@ function handleCheckPrice(successValue) {
     console.log(successValue);
 }
 
+function handleFailure(failureValue) {
+    console.log(failureValue);
+}
+
 const checkAvailability = isAvailable();
-checkAvailability.then(handleIsAvailable).then(handleCheckPrice);
+
+checkAvailability
+.then(handleIsAvailable)
+.then(handleCheckPrice)
+.catch(handleFailure);
 
